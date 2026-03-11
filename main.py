@@ -32,13 +32,18 @@ calificaciones = [
 #
 
 # Esta variable sirve para ir acumulando/sumando las calificaciones en cada iteracion
-suma_calificaciones = 0
+# suma_calificaciones = 0
 
 # Necesito:
 # 1. Sumar cada calificacion de la lista, a la variable suma_calificaciones
 
 for lista_calificaciones in calificaciones:
+    suma_calificaciones = 0 
+
     for calificacion in lista_calificaciones:
         suma_calificaciones = calificacion + suma_calificaciones
     print('===AQUI TERMINA UNA LISTA===')
     print('suma_calificaciones es: ', suma_calificaciones)
+
+    promedio = suma_calificaciones / 8
+    print(promedio)
